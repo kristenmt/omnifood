@@ -27,7 +27,7 @@ $email_content .= "Message:\n$message\n";
 $email_headers = "From: $name <$email>";
 
 //send the email
-mail($recipient, $subject, $email_content, $email_headers) {
+mail($recipient, $subject, $email_content, $email_headers);
     //redirect to index.html with success code
     header("Location: http://www.designcourse.co/omnifood/index.php?success=1#form");
-}
+
