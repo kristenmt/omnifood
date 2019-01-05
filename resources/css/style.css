@@ -498,6 +498,22 @@ input[type=checkbox] {
 
 *:focus {outline:none}
 
+.form-messages {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.success {
+    background-color: rgba(37, 202, 92, 0.651);
+}
+
+.error {
+    background-color: #eb19199a;
+}
 
 /* footer */
 

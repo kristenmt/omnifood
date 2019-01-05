@@ -13,7 +13,7 @@ if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL
 }
 
 //set recepient email address and update
-$recipient = "hello@webdesigncourse.co";
+$recipient = "kc7795@hotmail.com";
 
 //set email subject
 $subject = "New contact from $name";
