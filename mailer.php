@@ -11,3 +11,23 @@ if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL
     header("Location: http://www.webdesigncourse.co/omnifood/index.php?success=-1#form");
     exit;
 }
+
+//set recepient email address and update
+$recipient = "hello@webdesigncourse.co";
+
+//set email subject
+$subject = "New contact from $name";
+
+//build the email content
+$email_content = "Name: $name\n";
+$email_content .= "Email: $email\n\n";
+$email_content .= "Message:\n$message\n";
+
+//build the email headers
+$email_headers = "From: $name <$email>";
+
+//send the email
+mail($recipient, $subject, $email_content, $email_headers) {
+    //redirect to index.html with success code
+    header("Location: http://www.designcourse.co/omnifood/index.php?success=1#form");
+}
